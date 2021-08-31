@@ -2,7 +2,6 @@ import cv2
 from vidgear.gears import PiGear
 from collections import Counter
 from module import findnameoflandmark,findpostion
-import math
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False) 
