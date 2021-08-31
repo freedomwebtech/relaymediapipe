@@ -1,6 +1,5 @@
 import cv2
 import mediapipe as freedomtech
-#from gtts import gTTS
 import os
 
 drawingModule = freedomtech.solutions.drawing_utils
@@ -14,10 +13,7 @@ mod=handsModule.Hands()
 h=480
 w=640
 
-#def speak(a):
-#    tts = gTTS(text=a, lang='en')
-#    tts.save("audio.mp3")
-#    os.system("mpg321 audio.mp3")
+
 def findpostion(frame1):
     list=[]
     results = mod.process(cv2.cvtColor(frame1, cv2.COLOR_BGR2RGB))
